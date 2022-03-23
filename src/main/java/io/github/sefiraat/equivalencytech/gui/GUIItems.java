@@ -85,8 +85,8 @@ public class GUIItems {
         List<String> lore = new ArrayList<>();
         lore.add(Messages.THEME_EMC_PURPLE + "EMC: " + Utils.getEMC(plugin, itemStack));
         lore.add("");
-        lore.add(Messages.THEME_CLICK_INSTRUCTION + "Left Click: " + ChatColor.WHITE + c.getGuiEntryLeftClick());
-        lore.add(Messages.THEME_CLICK_INSTRUCTION + "Right Click: " + ChatColor.WHITE + c.getGuiEntryRightClick());
+        lore.add(Messages.THEME_CLICK_INSTRUCTION + "左鍵: " + ChatColor.WHITE + c.getGuiEntryLeftClick());
+        lore.add(Messages.THEME_CLICK_INSTRUCTION + "右鍵: " + ChatColor.WHITE + c.getGuiEntryRightClick());
         return lore;
     }
 

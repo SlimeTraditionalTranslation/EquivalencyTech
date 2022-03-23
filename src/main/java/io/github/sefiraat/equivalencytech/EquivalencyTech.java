@@ -9,9 +9,9 @@ import io.github.sefiraat.equivalencytech.misc.ManagerSupportedPlugins;
 import io.github.sefiraat.equivalencytech.recipes.EmcDefinitions;
 import io.github.sefiraat.equivalencytech.recipes.Recipes;
 import io.github.sefiraat.equivalencytech.runnables.ManagerRunnables;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.updater.GitHubBuildsUpdater;
-import org.bstats.bukkit.Metrics;
-import org.bstats.charts.SimplePie;
+//import io.github.thebusybiscuit.slimefun4.libraries.dough.updater.GitHubBuildsUpdater;
+//import org.bstats.bukkit.Metrics;
+//import org.bstats.charts.SimplePie;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.plugin.java.JavaPluginLoader;
@@ -87,9 +87,9 @@ public class EquivalencyTech extends JavaPlugin {
 
         instance = this;
 
-        if (this.getConfig().getBoolean("auto-update") && this.getDescription().getVersion().startsWith("DEV")) {
+        /*if (this.getConfig().getBoolean("auto-update") && this.getDescription().getVersion().startsWith("DEV")) {
             new GitHubBuildsUpdater(this, this.getFile(), "Sefiraat/EquivalencyTech/master").start();
-        }
+        }*/
 
         configMainClass = new ConfigMain(this);
         eqItems = new EQItems(this);
@@ -101,12 +101,12 @@ public class EquivalencyTech extends JavaPlugin {
 
         registerCommands();
 
-        if (!isUnitTest) {
+        /*if (!isUnitTest) {
             int pluginId = 11527;
             Metrics metrics = new Metrics(this, pluginId);
             metrics.addCustomChart(new SimplePie("slimefun", () -> String.valueOf(getManagerSupportedPlugins().isInstalledSlimefun())));
             metrics.addCustomChart(new SimplePie("emc2", () -> String.valueOf(getManagerSupportedPlugins().isInstalledEMC2())));
-        }
+        }*/
 
     }
 

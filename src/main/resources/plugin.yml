@@ -1,5 +1,6 @@
 name: EquivalencyTech
 version: ${project.version}
+description: 黏液科技附加 等價技術 繁體翻譯版.
 main: io.github.sefiraat.equivalencytech.EquivalencyTech
 api-version: 1.16
 softdepend:

@@ -97,12 +97,12 @@ public class GuiTransmutationOrb extends PaginatedGui {
 
         setInputSlot(plugin, gui);
 
-        gui.setItem(backSlot, ItemBuilder.from(Material.PAPER).setName("Previous").asGuiItem(event -> {
+        gui.setItem(backSlot, ItemBuilder.from(Material.PAPER).setName("上一頁").asGuiItem(event -> {
             event.setCancelled(true);
             gui.previous();
         }));
 
-        gui.setItem(forwardSlot, ItemBuilder.from(Material.PAPER).setName("Next").asGuiItem(event -> {
+        gui.setItem(forwardSlot, ItemBuilder.from(Material.PAPER).setName("下一頁").asGuiItem(event -> {
             event.setCancelled(true);
             gui.next();
         }));

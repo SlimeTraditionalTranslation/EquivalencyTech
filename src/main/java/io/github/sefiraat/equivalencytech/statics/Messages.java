@@ -13,7 +13,7 @@ import java.util.List;
 
 public final class Messages {
 
-    public static final String PREFIX = "" + ChatColor.GRAY + "[EMCTech] ";
+    public static final String PREFIX = "" + ChatColor.GRAY + "[等價技術] ";
     public static final String SUFFIX = "" + ChatColor.GRAY + "";
 
     public static final ChatColor THEME_WARNING = ChatColor.YELLOW;
@@ -75,7 +75,7 @@ public final class Messages {
     }
 
     public static String messageGuiEmcGiven(EquivalencyTech plugin, Player player, double emcBase, double emcTotal, int itemAmt, int burnRate) {
-        return PREFIX + THEME_SUCCESS + "+" + emcTotal + " EMC " + THEME_PASSIVE + "(" + emcBase + " * " + itemAmt + ")" + THEME_ERROR + " burn rate = " + burnRate + "%" + THEME_NOTICE + " : [EMC : " + ConfigMain.getPlayerEmc(plugin, player) + "]";
+        return PREFIX + THEME_SUCCESS + "+" + emcTotal + " EMC " + THEME_PASSIVE + "(" + emcBase + " * " + itemAmt + ")" + THEME_ERROR + " 燃燒率 = " + burnRate + "%" + THEME_NOTICE + " : [EMC : " + ConfigMain.getPlayerEmc(plugin, player) + "]";
     }
 
     public static String messageGuiEmcRemoved(EquivalencyTech plugin, Player player, double emcBase, double emcTotal, int itemAmt) {
@@ -116,10 +116,10 @@ public final class Messages {
 
     public static List<String> messageEMC2Installed(EquivalencyTech plugin) {
         List<String> message = new ArrayList<>();
-        message.add(THEME_ERROR + "You have both EquiTech and EMC2 installed.");
-        message.add(THEME_NOTICE + "Be warned that this may cause issues. Visit the sites below for more. This message does NOT mean you need to remove EMC2/EquiTech.");
+        message.add(THEME_ERROR + "你同時安裝了 EquivalencyTech 與 EMC2.");
+        message.add(THEME_NOTICE + "請注意這可能導致問題. 請查看以下網站連結來了解更多. 此消息並不意味著你需要刪除 EquivalencyTech/EMC2.");
         message.add("");
-        message.add(THEME_NOTICE + "Disable this message in the EquiTech config.");
+        message.add(THEME_NOTICE + "在 EquivalencyTech 的 config.yml 中關閉此訊息.");
         message.add("");
         message.add( THEME_WARNING + "https://github.com/Sefiraat/EquivalencyTech/");
         message.add(THEME_WARNING + "https://github.com/Seggan/EMC2");

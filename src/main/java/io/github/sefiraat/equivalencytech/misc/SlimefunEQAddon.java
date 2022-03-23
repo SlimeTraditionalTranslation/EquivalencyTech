@@ -35,8 +35,8 @@ public class SlimefunEQAddon implements SlimefunAddon {
 
         ItemStack categoryItemMain = SkullCreator.itemFromBase64(SkullTextures.ITEM_TRANSMUTATION_ORB);
         ItemMeta im = categoryItemMain.getItemMeta();
-        im.setDisplayName(ChatColor.YELLOW + "EquivalencyTech");
-        im.setLore(Collections.singletonList("&a> Click to open"));
+        im.setDisplayName(ChatColor.YELLOW + "等價技術");
+        im.setLore(Collections.singletonList("&a> 點擊開啟"));
         categoryItemMain.setItemMeta(im);
         ItemGroup eqCategory = new ItemGroup(categoryIdMain, categoryItemMain);
 
